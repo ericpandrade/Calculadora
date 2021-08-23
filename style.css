@@ -85,7 +85,6 @@ button {
   background-color: transparent;
   font: 700 1rem Poppins, sans-serif;
   margin: 0.25rem;
-
 }
 
 #equality {
@@ -103,7 +102,69 @@ button {
   background: #1e1e24;
 }
 
-@media (max-width: 500px){
+footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  margin: 1rem 1rem 0.25rem 0rem;
+}
+
+a:hover {
+  transition: 0.3s;
+  transform: translateY(-0.5rem);
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  margin: 1rem 1rem 0.25rem 0rem;
+}
+
+a:hover {
+  transition: 0.3s;
+  transform: translateY(-0.5rem);
+}
+
+/* ICONS */
+#icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+  color: #db9065;
+}
+
+.icon-play {
+  margin-top: 0;
+  color: #e8f1f2;
+}
+
+@media (max-width: 300px) {
   button {
     padding: 1rem;
   }

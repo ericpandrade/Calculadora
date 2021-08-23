@@ -24,6 +24,6 @@ function calcular() {
       document.getElementById("answer").value = "Nothing to calculate.";
     }
   } catch {
-    document.getElementById("answer").value = "Something wrong... Try again";
+    document.getElementById("answer").value = "Something wrong... Try again!";
   }
 }
