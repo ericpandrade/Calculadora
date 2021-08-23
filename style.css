@@ -164,8 +164,12 @@ icon {
   color: #e8f1f2;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
+  html {
+    font-size: 92.75%;
+  }
+
   button {
-    padding: 1rem;
+    padding: 1.25rem;
   }
 }
