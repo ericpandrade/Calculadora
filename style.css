@@ -16,6 +16,7 @@ body {
   transform: translate(-50%, -50%);
   width: 300px;
   max-width: 90%;
+  max-height: 90%;
   background: #30e8bf; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
