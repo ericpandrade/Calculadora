@@ -6,7 +6,7 @@
 
 body {
   font: 400 1rem Poppins, sans-serif;
-  background: #FBD1A2;
+  background: #fbd1a2;
 }
 
 #container {
@@ -16,36 +16,46 @@ body {
   transform: translate(-50%, -50%);
   width: 300px;
   max-width: 90%;
-  background: #30E8BF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #30e8bf; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff8235,
+    #30e8bf
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff8235,
+    #30e8bf
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-repeat: no-repeat;
-  color: #F7EDE2;
+  color: #f7ede2;
   border-radius: 1rem;
 }
 
-h1{
-  font: 700 1.5rem Poppins, sans-serif;;
+h1 {
+  font: 700 1.5rem Poppins, sans-serif;
   text-align: center;
   padding: 0.5rem;
-  color: #0B0A07;
+  color: #0b0a07;
 }
 
 #answer {
-    display: block;
-    margin: 0 auto;
-    padding: 0.5rem;
-    width: 250px;
-    max-width: 90%;
-    background-color: #F7EDE2;
-    border-radius: 0.5rem;
-    border: none;
-    font: 400 1rem Poppins, sans-serif;
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 250px;
+  max-width: 90%;
+  background-color: #f7ede2;
+  border-radius: 0.5rem;
+  border: none;
+  font: 400 1rem Poppins, sans-serif;
+  color: black;
 }
 
 input:focus {
-    outline: 0;
+  outline: 0;
 }
 
 table {
@@ -56,43 +66,45 @@ table {
 }
 
 td {
-  width: fit-content;
-  background-color: #0B0A07;
+  background-color: #0b0a07;
   opacity: 0.8;
   border-radius: 0.5rem;
   text-align: center;
 }
 
 td:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 button {
   opacity: 1;
-  color: #F7EDE2;
+  color: #f7ede2;
   font-weight: bold;
   padding: 1.25rem;
   border: none;
   background-color: transparent;
   font: 700 1rem Poppins, sans-serif;
   margin: 0.25rem;
+
 }
 
 #equality {
   height: fit-content;
   text-align: center;
-  background-color: #FC5130;
+  background-color: #fc5130;
 }
 
 #equality button {
-    font-size: 1.5rem;
-}
-
-#zero {
-  width: fit-content;
+  font-size: 1.5rem;
 }
 
 .functions {
   opacity: 0.8;
-  background: #1E1E24;
+  background: #1e1e24;
+}
+
+@media (max-width: 500px){
+  button {
+    padding: 1rem;
+  }
 }

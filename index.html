@@ -34,91 +34,89 @@
     <main>
       <section id="container">
         <table>
-            <!-- TABLE HEAD -->
+          <!-- TABLE HEAD -->
           <thead>
-              <div id="title">
-                <h1>Calculadora</h1>
-              </div>
-              <input type="text" id="answer">
+            <div id="title">
+              <h1>Calculadora</h1>
+            </div>
+            <input type="text" id="answer" value=''/>
           </thead>
 
           <!-- TABLE BODY -->
           <tbody>
             <tr>
-              <td class="functions">
+              <td class="functions" onclick="clean()">
                 <button>C</button>
               </td>
-              <td class="functions">
-                <button>x²</button>
+              <td class="functions" onclick="back()">
+                <button><</button>
               </td>
-              <td class="functions">
+              <td class="functions" onclick="insert('/')">
                 <button>/</button>
               </td>
-              <td class="functions">
+              <td class="functions" onclick="insert('*')">
                 <button>X</button>
               </td>
             </tr>
 
             <tr>
-                <td>
-                  <button>7</button>
-                </td>
-                <td>
-                  <button>8</button>
-                </td>
-                <td>
-                  <button>9</button>
-                </td>
-                <td class="functions">
-                  <button>-</button>
-                </td>
-              </tr>
+              <td>
+                <button onclick="insert('7')">7</button>
+              </td>
+              <td>
+                <button onclick="insert('8')">8</button>
+              </td>
+              <td>
+                <button onclick="insert('9')">9</button>
+              </td>
+              <td class="functions" onclick="insert('-')">
+                <button>-</button>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <button>4</button>
-                </td>
-                <td>
-                  <button>5</button>
-                </td>
-                <td>
-                  <button>6</button>
-                </td>
-                <td class="functions">
-                  <button>+</button>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <button onclick="insert('4')">4</button>
+              </td>
+              <td>
+                <button onclick="insert('5')">5</button>
+              </td>
+              <td>
+                <button onclick="insert('6')">6</button>
+              </td>
+              <td class="functions" onclick="insert('+')">
+                <button>+</button>
+              </td>
+            </tr>
 
-              <tr>
-                <td>
-                  <button>1</button>
-                </td>
-                <td>
-                  <button>2</button>
-                </td>
-                <td>
-                  <button>3</button>
-                </td>
-                <td rowspan="2" id="equality">
-                  <button>=</button>
-                </td>
-              </tr>
+            <tr>
+              <td>
+                <button onclick="insert('1')">1</button>
+              </td>
+              <td>
+                <button onclick="insert('2')">2</button>
+              </td>
+              <td>
+                <button onclick="insert('3')">3</button>
+              </td>
+              <td rowspan="2" id="equality" onclick="calcular()">
+                <button>=</button>
+              </td>
+            </tr>
 
-              <tr>
-                <td colspan="2" id="zero">
-                  <button id="zero">0</button>
-                </td>
-                <td>
-                  <button>.</button>
-                </td>
-              </tr>    
-
+            <tr>
+              <td colspan="2" id="zero" onclick="insert('0')">
+                <button>0</button>
+              </td>
+              <td onclick="insert('.')"">
+                <button>.</button>
+              </td>
+            </tr>
           </tbody>
         </table>
       </section>
     </main>
 
     <script src="script.js"></script>
-
   </body>
 </html>
